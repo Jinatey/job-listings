@@ -14,7 +14,7 @@ function App() {
   return (
     <div>
       <div className='header'>
-        <img src='./bg-header-desktop.svg' alt='' />
+        {/* <img src='/bg-header-desktop.svg' alt='' /> */}
       </div>
 
       {tags.length > 0 && (

@@ -12,7 +12,10 @@ body {
 }
 
 .header {
-  background-color: hsl(180, 29%, 50%);
+  /* background-color: hsl(180, 29%, 50%); */
+  background: url('/public/bg-header-desktop.svg') no-repeat center center/cover
+    hsl(180, 29%, 50%);
+  height: 130px;
 }
 
 .joblist {
@@ -34,11 +37,12 @@ body {
   margin: 2rem 0;
 }
 
-.main {
-  margin-left: 2rem;
+.job img {
+  object-fit: contain;
 }
 
-.job img {
+.main {
+  margin-left: 2rem;
 }
 
 .main h1 {
@@ -121,20 +125,13 @@ body {
 
 .tagfilter {
   width: min(1200px, 100% - 2rem);
-  margin-top: -1rem;
+  margin-top: -2rem;
   margin-inline: auto;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  /* width: 500px; */
   border-radius: 5px;
-
   background-color: white;
-  position: absolute;
-  left: 0;
-  right: 0;
 }
 
 .filtered-tags {
