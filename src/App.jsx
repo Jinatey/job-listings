@@ -46,39 +46,41 @@ function App() {
       )}
       <div className='joblist'>
         {filteredData.map((job) => (
-          <div key={job.companyName} className='job'>
-            <img src={job.img} alt='' />
+          <>
+            <div key={job.companyName} className='job'>
+              <img src={job.img} alt='' />
 
-            <div className='main'>
-              <div className='top-text'>
-                <h1>{job.companyName} </h1>
-                {job.new && <p>NEW!</p>}
-               { job.featured && <p>  Featured</p>}
+              <div className='main'>
+                <div className='top-text'>
+                  <h1>{job.companyName} </h1>
+                  {job.new && <p>NEW!</p>}
+                  {job.featured && <p> Featured</p>}
+                </div>
+
+                <h2>{job.title}</h2>
+
+                <div className='footer'>
+                  <p>{job.Day}</p>
+                  <p className='dot'>{job.type}</p>
+                  <p>{job.location}</p>
+                </div>
               </div>
 
-              <h2>{job.title}</h2>
-
-              <div className='footer'>
-                <p>{job.Day}</p>
-                <p className='dot'>{job.type}</p>
-                <p>{job.location}</p>
+              <div className='tags'>
+                {[job.role, job.level, ...job.tags].map((tag) => (
+                  <p
+                    key={tag}
+                    className='tag'
+                    onClick={() => {
+                      setTags([...new Set([...tags, tag])]);
+                    }}
+                  >
+                    {tag}
+                  </p>
+                ))}
               </div>
             </div>
-
-            <div className='tags'>
-              {[job.role, job.level, ...job.tags].map((tag) => (
-                <p
-                  key={tag}
-                  className='tag'
-                  onClick={() => {
-                    setTags([...new Set([...tags, tag])]);
-                  }}
-                >
-                  {tag}
-                </p>
-              ))}
-            </div>
-          </div>
+          </>
         ))}
       </div>
     </div>
