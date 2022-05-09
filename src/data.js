@@ -3,9 +3,9 @@ export const jobData = [
     companyName: 'Photosnap',
     title: 'Senior Frontend Developer',
 
-    status: 'new',
+    new: true,
     featured: true,
-    Day: '1d ago' ,
+    Day: '1d ago',
     type: 'FullTime',
     location: 'USA only',
     img: './photosnap.svg',
@@ -16,7 +16,7 @@ export const jobData = [
   {
     companyName: 'Manage',
     title: 'Junior Frontend Developer',
-    status: 'new',
+    new: true,
     featured: true,
     Day: '1d ago',
     type: 'FullTime',
@@ -28,6 +28,7 @@ export const jobData = [
   },
   {
     companyName: 'Account',
+    new:true,
     title: 'Junior Frontend Developer',
     Day: '2d ago',
     type: 'Part Time',
@@ -51,7 +52,7 @@ export const jobData = [
   {
     companyName: ' Loop Studios',
     title: ' Software Engineer',
-    Day: '1W ago',
+    Day: '1w ago',
     type: 'Full Time',
     img: './loop-studios.svg',
     location: 'Worldwide',
@@ -62,7 +63,7 @@ export const jobData = [
   {
     companyName: ' FaceIt',
     title: '  Junior Backend Developer',
-    Day: '2W ago',
+    Day: '2w ago',
     type: 'Full Time',
     img: './faceit.svg',
     location: 'UK only',
@@ -73,7 +74,7 @@ export const jobData = [
   {
     companyName: 'Shortly',
     title: '   Junior Developer',
-    Day: '2W ago',
+    Day: '2w ago',
     type: 'Full Time',
     img: './shortly.svg',
     location: 'UK only',
@@ -84,7 +85,7 @@ export const jobData = [
   {
     companyName: 'Insure',
     title: '   Junior Frontend Developer',
-    Day: '2W ago',
+    Day: '2w ago',
     type: 'Full Time',
     img: './insure.svg',
     location: 'Us only',
@@ -95,7 +96,7 @@ export const jobData = [
   {
     companyName: 'Eyecam Co',
     title: 'Full stack Engineer',
-    Day: '3W ago',
+    Day: '3w ago',
     type: 'Full Time',
     img: './insure.svg',
     location: 'Worldwide',
@@ -114,4 +115,6 @@ export const jobData = [
     level: 'Juinor',
     tags: ['html', 'css', 'JavaScript'],
   },
+
+
 ];
